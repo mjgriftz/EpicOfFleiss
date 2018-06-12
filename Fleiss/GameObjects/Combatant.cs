@@ -32,6 +32,11 @@ namespace Fleiss.GameObjects
         public class CombatStatus
         {
             //todo
+            public int Hp { get; private set; }
+            public int Sp { get; private set; }
+            public int Mp { get; private set; }
+            public bool IsPoisoned { get; private set; }
+            public bool Is
         }
         public class Equipment
         {
