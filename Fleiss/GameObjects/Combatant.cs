@@ -12,9 +12,9 @@ namespace Fleiss.GameObjects
     {
         public CombatProfile Profile { get; protected set; }
         public CombatStatus Status { get; protected set; }
-        public Equipment Equip { get; protected set; }
+        public EquipConfig Equip { get; protected set; }
 
-        public Combatant(CombatProfile cp, CombatStatus cs, Equipment eq)
+        public Combatant(CombatProfile cp, CombatStatus cs, EquipConfig eq)
         {
             this.Profile = cp;
             this.Status = cs;
@@ -36,9 +36,9 @@ namespace Fleiss.GameObjects
             public int Sp { get; private set; }
             public int Mp { get; private set; }
             public bool IsPoisoned { get; private set; }
-            public bool Is
+            //todo more status effects
         }
-        public class Equipment
+        public class EquipConfig
         {
             //todo
         }
@@ -47,10 +47,18 @@ namespace Fleiss.GameObjects
     public class Ally: Combatant
     {
         //todo
+        public Ally(CombatProfile cp, CombatStatus cs, EquipConfig eq): base(cp, cs, eq) 
+        {
+            
+        }
     }
     public class Enemy: Combatant
     {
         //todo
+        public Enemy(CombatProfile cp, CombatStatus, EquipConfig eq): base(cp, cs, eq)
+        {
+            
+        }
     }
 
 }

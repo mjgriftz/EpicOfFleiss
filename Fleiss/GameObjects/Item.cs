@@ -13,14 +13,32 @@ namespace Fleiss.GameObjects
     }
     public abstract class Consumable: Item
     {
+        public Consumable(string name, string description) : base(name, description)
+        {
+            
+        }
         //todo
     }
     public abstract class Equipment: Item
     {
-        //todo
+        public int AtkRating { get; protected set; }
+        public int DefRating { get; protected set; }
+        public int DdgRating { get; protected set; }
+        public int StrRating { get; protected set; }
+        public int AgiRating { get; protected set; }
+        public int Weight { get; protected set; }
+
+        public Equipment(string name, string description) : base(name, description)
+        {
+            
+        }
     }
     public class KeyItem: Item
     {
+        public KeyItem(string name, string description) : base(name, description)
+        {
+            
+        }
         //todo
     }
 }
