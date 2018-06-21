@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Fleiss.Properties
+namespace Fleiss.Engine
 {
     public class FleissGame
     {

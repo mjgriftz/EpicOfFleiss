@@ -36,10 +36,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameObjects\Combatant.cs" />
     <Compile Include="GameObjects\Item.cs" />
-    <Compile Include="Properties\FleissGame.cs" />
+    <Compile Include="Engine\FleissGame.cs" />
+    <Compile Include="Engine\InputEngine.cs" />
+    <Compile Include="Engine\RenderEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameObjects\" />
+    <Folder Include="Engine\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
