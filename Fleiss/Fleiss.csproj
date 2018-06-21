@@ -36,6 +36,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameObjects\Combatant.cs" />
     <Compile Include="GameObjects\Item.cs" />
+    <Compile Include="Properties\FleissGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameObjects\" />

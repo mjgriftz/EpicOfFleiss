@@ -55,7 +55,7 @@ namespace Fleiss.GameObjects
     public class Enemy: Combatant
     {
         //todo
-        public Enemy(CombatProfile cp, CombatStatus, EquipConfig eq): base(cp, cs, eq)
+        public Enemy(CombatProfile cp, CombatStatus cs, EquipConfig eq): base(cp, cs, eq)
         {
             
         }
