@@ -3,6 +3,8 @@ namespace Fleiss.Engine
 {
     public class RenderEngine
     {
+        public GameView rootView;
+
         public RenderEngine()
         {
             //TODO
@@ -13,5 +15,16 @@ namespace Fleiss.Engine
             //Update 
             return new RenderEngine();
         }
+
+        public void DrawWindow()
+        {
+            //TODO
+        }
     }
+}
+
+public class GameView
+{
+    
+
 }
