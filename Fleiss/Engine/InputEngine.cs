@@ -10,13 +10,32 @@ namespace Fleiss.Engine
 
         public static InputEngine DefaultEngine()
         {
-            return new InputEngine();
+            return new TextInputEngine();
         }
 
-        public bool DidExit()
+        public virtual bool DidExit()
         {
             //TODO
             return false;
         }
+
+        public virtual void GetInput()
+        {
+            
+        }
+    }
+
+    public class TextInputEngine: InputEngine
+    {
+        public TextInputEngine() : base()
+        {
+            
+        }
+        public override void GetInput()
+        {
+            
+        }
     }
 }
+
+

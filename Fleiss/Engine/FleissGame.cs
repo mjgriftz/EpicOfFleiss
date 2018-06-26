@@ -18,9 +18,13 @@ namespace Fleiss.Engine
         //Game Loop Implementation
         public void GameMain()
         {
-            GetInput();
-            Update();
-            Render();
+            while(!exitStatus)
+            {
+                GetInput();
+                Update();
+                Render();
+            }
+
         }
 
         private void GetInput()

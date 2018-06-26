@@ -1,5 +1,6 @@
 ﻿using System;
 using Fleiss.Properties;
+using Fleiss.Engine;
 
 namespace Fleiss
 {
@@ -13,10 +14,7 @@ namespace Fleiss
             FleissGame game = new FleissGame();
 
             //Start Game Loop
-            while(!game.exitStatus)
-            {
-                game.GameMain();
-            }
+            game.GameMain();
         }
     }
 }
