@@ -22,6 +22,7 @@ namespace Fleiss.Engine
             this.rootWindow.Draw();
         }
     }
+
     public abstract class GameWindow
     {
         public virtual void Draw() { }
@@ -37,6 +38,7 @@ namespace Fleiss.Engine
         protected char[,] drawData_;
         protected int width_;
         protected int height_;
+
         public TextWindow() : this(80, 24) { }
 
         public TextWindow(int height, int width)

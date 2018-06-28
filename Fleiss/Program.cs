@@ -8,7 +8,6 @@ namespace Fleiss
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
             //Initialize Game
             FleissGame game = new FleissGame();
