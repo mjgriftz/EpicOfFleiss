@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace Fleiss.Engine
 {
     public class RenderEngine
@@ -32,12 +33,21 @@ namespace Fleiss.Engine
         }
     }
 
+    public abstract class GameView
+    {
+        public virtual void Draw(GameWindow)
+        {
+
+        }
+    }
+
     public class TextWindow : GameWindow
     {
 
         protected char[,] drawData_;
         protected int width_;
         protected int height_;
+        protected List<GameView> children_;
 
         public TextWindow() : this(80, 24) { }
 
@@ -56,6 +66,11 @@ namespace Fleiss.Engine
 
         public override void Draw()
         {
+
+            foreach(GameView view in this.children_)
+            {
+                view.Draw(this);
+            }
             for (int i = 0; i < width_; i++)
             {
                 for (int j = 0; j < height_; j++)
