@@ -33,7 +33,7 @@ namespace Fleiss.Engine
         }
         public override void GetInput()
         {
-            
+            Console.ReadLine(); //This is for testing
         }
     }
 }

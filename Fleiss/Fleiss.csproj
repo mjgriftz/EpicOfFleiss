@@ -39,6 +39,8 @@
     <Compile Include="Engine\FleissGame.cs" />
     <Compile Include="Engine\InputEngine.cs" />
     <Compile Include="Engine\RenderEngine.cs" />
+    <Compile Include="Engine\GameWindow.cs" />
+    <Compile Include="Engine\GameView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GameObjects\" />

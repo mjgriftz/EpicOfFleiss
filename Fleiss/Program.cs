@@ -1,5 +1,4 @@
 ﻿using System;
-using Fleiss.Properties;
 using Fleiss.Engine;
 
 namespace Fleiss

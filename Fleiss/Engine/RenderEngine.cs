@@ -2,6 +2,30 @@
 using System.Collections.Generic;
 namespace Fleiss.Engine
 {
+
+    public struct location
+    {
+        public readonly int X;
+        public readonly int Y;
+
+        public location(int x, int y)
+        {
+            this.X = x;
+            this.Y = y;
+        }
+    }
+    public struct size
+    {
+        public readonly int Width;
+        public readonly int Height;
+
+        public size(int width, int height)
+        {
+            this.Width = width;
+            this.Height = height;
+        }
+    }
+
     public class RenderEngine
     {
         public GameWindow rootWindow;
@@ -21,63 +45,6 @@ namespace Fleiss.Engine
         public void DrawWindow()
         {
             this.rootWindow.Draw();
-        }
-    }
-
-    public abstract class GameWindow
-    {
-        public virtual void Draw() { }
-        public static TextWindow MakeTextWindow()
-        {
-            return new TextWindow();
-        }
-    }
-
-    public abstract class GameView
-    {
-        public virtual void Draw(GameWindow)
-        {
-
-        }
-    }
-
-    public class TextWindow : GameWindow
-    {
-
-        protected char[,] drawData_;
-        protected int width_;
-        protected int height_;
-        protected List<GameView> children_;
-
-        public TextWindow() : this(80, 24) { }
-
-        public TextWindow(int height, int width)
-        {
-            //initialize the drawData_ buffer
-            drawData_ = new char[width, height];
-            for (int i = 0; i < width; i++)
-            {
-                for (int j = 0; j < height; j++)
-                {
-                    drawData_[i, j] = ' ';
-                }
-            }
-        }
-
-        public override void Draw()
-        {
-
-            foreach(GameView view in this.children_)
-            {
-                view.Draw(this);
-            }
-            for (int i = 0; i < width_; i++)
-            {
-                for (int j = 0; j < height_; j++)
-                {
-                    Console.Write(drawData_[i, j]);
-                }
-            }
         }
     }
 }
