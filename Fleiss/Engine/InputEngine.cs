@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Fleiss.Engine
 {
-    public class InputEngine
+    public abstract class InputEngine
     {
         public InputEngine()
         {
