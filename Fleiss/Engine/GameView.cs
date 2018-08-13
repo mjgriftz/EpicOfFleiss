@@ -7,7 +7,7 @@ namespace Fleiss.Engine
 
         public virtual void Draw(GameWindow window)
         {
-
+            
         }
     }
 

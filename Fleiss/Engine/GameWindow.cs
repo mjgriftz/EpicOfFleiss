@@ -31,7 +31,7 @@ namespace Fleiss.Engine
             {
                 for (int j = 0; j < height; j++)
                 {
-                    drawData_[i, j] = ' ';
+                    drawData_[i, j] = '$';
                 }
             }
         }
